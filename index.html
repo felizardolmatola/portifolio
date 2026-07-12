@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felizardo Lázaro Matola — Desenvolvedor Web</title>
+  <meta name="description"
+    content="Portfólio de Felizardo Lázaro Matola, Desenvolvedor Web especializado em HTML, CSS e JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="statusbar" aria-hidden="true">
+    <span>Felizardo.dev</span>
+    <span class="statusbar__dot"></span>
+    <span>UTF-8</span>
+    <span class="statusbar__dot"></span>
+    <span>Beira, Moçambique</span>
+  </div>
+
+  <header class="nav">
+    <a href="#topo" class="nav__brand">F.M</a>
+    <nav class="nav__links">
+      <a href="#sobre">Sobre</a>
+      <a href="#competencias">Competências</a>
+      <a href="#projectos">Projectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="topo">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">-DESENVOLVEDOR FULL STACK-</p>
+        <h1 class="hero__name">Felizardo<br>Lázaro Matola</h1>
+        <p class="hero__tagline">Construo interfaces rápidas, acessíveis e bem cuidadas — do esqueleto em <span
+            class="accent">HTML</span> ao estilo em <span class="accent">CSS</span> até à interacção em <span
+            class="accent">JavaScript</span>.</p>
+        <div class="hero__cta">
+          <a href="#projectos" class="btn btn--primary">Ver projectos</a>
+          <a href="#contacto" class="btn btn--ghost">Entrar em Contacto</a>
+        </div>
+      </div>
+      <div class="hero__portrait">
+        <div class="hero__frame">
+          <img src="./IMG_3844.png" alt="Retrato de Felizardo Lázaro Matola" />
+        </div>
+      </div>
+    </section>
+
+    <div class="skyline" aria-hidden="true"></div>
+
+    <!-- SOBRE -->
+    <section class="section section--dark" id="sobre">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--light">Sobre</p>
+        <h2>Quem sou eu</h2>
+      </div>
+      <div class="about">
+        <p class="about__text">
+          Chamo-me Felizardo Lázaro Matola. Sou desenvolvedor Full stack e gosto de transformar ideias
+          em páginas que funcionam bem em qualquer ecrã — do telemóvel ao desktop. Trabalho a
+          base sólida da web: marcação semântica, estilo cuidado e comportamento,atualmente focado em tecnologias como
+          JavaScript, Python, Typerscript e ruby,
+          sempre com atenção ao detalhe e à experiência de quem usa o que construo.
+        </p>
+        <dl class="about__facts">
+          <div class="about__fact">
+            <dt>foco</dt>
+            <dd>HTML · CSS · JavaScript · Python · Ruby · Typerscript.</dd>
+          </div>
+          <div class="about__fact">
+            <dt>abordagem</dt>
+            <dd>Mobile-first, código limpo</dd>
+          </div>
+          <div class="about__fact">
+            <dt>disponibilidade</dt>
+            <dd>Aberto a novos projectos</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- COMPETÊNCIAS -->
+    <section class="section" id="competencias">
+      <div class="section__head">
+        <p class="eyebrow">// competências</p>
+        <h2>Com que trabalho</h2>
+      </div>
+      <div class="skills">
+        <div class="skills__group">
+          <h3>Aplicações web</h3>
+          <ul class="tags">
+            <li>React</li>
+            <li> Node.js&amp; PostgreSQL</li>
+            <li>Acessibilidade</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>APIs &amp; Backend</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>node.js</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Sites &amp; Londing Pages </h3>
+          <ul class="tags">
+            <li>JavaScript</li>
+            <li>Ract</li>
+            <li>CSS Moderno</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTOS -->
+    <section class="section section--dark" id="projectos">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--light">// projectos</p>
+        <h2>Trabalhos recentes</h2>
+        <p class="section__note">Exemplos — substitua pelos seus projectos reais, com capturas de ecrã e links.</p>
+      </div>
+      <div class="projects">
+        <article class="project">
+          <div class="project__top">
+            <span class="project__num">01</span>
+            <div class="project__links">
+              <a href="#" aria-label="Ver código">código</a>
+              <a href="#" aria-label="Ver demonstração">demo</a>
+            </div>
+          </div>
+          <h3>Loja Online Simples</h3>
+          <p>Catálogo de produtos com carrinho de compras funcional, construído em JavaScript puro.</p>
+          <ul class="tags tags--sm">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+        <article class="project">
+          <div class="project__top">
+            <span class="project__num">02</span>
+            <div class="project__links">
+              <a href="#" aria-label="Ver código">código</a>
+              <a href="#" aria-label="Ver demonstração">demo</a>
+            </div>
+          </div>
+          <h3>Painel do Tempo</h3>
+          <p>Consulta de previsão meteorológica em tempo real através de uma API pública.</p>
+          <ul class="tags tags--sm">
+            <li>JavaScript</li>
+            <li>API</li>
+            <li>CSS Grid</li>
+          </ul>
+        </article>
+        <article class="project">
+          <div class="project__top">
+            <span class="project__num">03</span>
+            <div class="project__links">
+              <a href="#" aria-label="Ver código">código</a>
+              <a href="#" aria-label="Ver demonstração">demo</a>
+            </div>
+          </div>
+          <h3>Landing Page — Evento</h3>
+          <p>Página de apresentação para um evento local, com formulário de inscrição e animações ao rolar.</p>
+          <ul class="tags tags--sm">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Responsivo</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="section__head">
+        <p class="eyebrow">// contacto</p>
+        <h2>Vamos conversar</h2>
+      </div>
+      <div class="contact">
+        <div class="contact__info">
+          <p>Tem um projecto em mente ou quer apenas trocar ideias sobre desenvolvimento web? Escreva-me.</p>
+          <ul class="contact__list">
+            <li><span>email</span><a href="mailto:felizardo@exemplo.com">felizardomatola27@exemplo.com</a></li>
+            <li><span>github</span><a href="#" target="_blank" rel="noopener">github.com/felizardolmatola</a></li>
+            <li><span>linkedin</span><a href="#" target="_blank" rel="noopener">linkedin.com/in/felizardomatola</a></li>
+            <li><span>Instagram</span><a href="mailto:felizardo@exemplo.com">felizardomatola27@exemplo.com</a></li>
+            <li><span>Facebook</span><a href="mailto:felizardo@exemplo.com">felizardomatola27@exemplo.com</a></li>
+          </ul>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <label>
+            Nome
+            <input type="text" name="nome" required placeholder="O seu nome">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="voce@email.com">
+          </label>
+          <label>
+            Mensagem
+            <textarea name="mensagem" rows="4" required placeholder="Escreva a sua mensagem..."></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+          <p class="contact__status" id="contactStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Felizardo Lázaro Matola.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

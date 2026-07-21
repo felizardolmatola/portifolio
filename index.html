@@ -7,223 +7,276 @@
   <title>Felizardo Lázaro Matola — Desenvolvedor Web</title>
   <meta name="description"
     content="Portfólio de Felizardo Lázaro Matola, Desenvolvedor Web especializado em HTML, CSS e JavaScript.">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+  <script src="javascript.js" defer></script>
+
+  <!-- Font Awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://felizardolmatola.github.io/portifolio/">
+  <meta property="og:title" content="Felizardo Matola | Desenvolvedor Fullstack">
+  <meta property="og:description" content="Desenvolvedor fullstack com experiência em Front-End, Back-End, DevOps e IA. Confira meus projetos.">
+  <meta property="og:image" content="https://felizardolmatola.github.io/portifolio/IMG_3980.png">
 </head>
 
 <body>
   <header class="nav">
-    <a href="#topo" class="nav__brand">F.M</a>
-    <nav class="nav__links">
-      <a href="#sobre">Sobre</a>
-      <a href="#competencias">Competências</a>
-      <a href="#projectos">Projectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
+  <a href="#topo" class="nav__brand">F.M</a>
+  <nav class="nav__links">
+    <a href="#sobre">Sobre</a>
+    <a href="#skills">Skills</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
 
   <main id="topo">
     <!-- HERO -->
     <section class="hero">
       <div class="hero__text">
-        <p class="eyebrow">-DESENVOLVEDOR FULL STACK-</p>
-        <h1 class="hero__name">Felizardo<br>Lázaro Matola</h1>
-        <p class="hero__tagline"> Criando experiências digitais incríveis com código limpo e design moderno</p>
+        <p class="eyebrow">Olá, eu sou</p>
+        <!-- Nome com efeito de máquina de escrever -->
+    <h1 class="hero__name">
+      <span id="typewriter"></span><span class="cursor">|</span>
+    </h1>
+        <p class="hero__tagline">Criando experiências digitais incríveis com código limpo e design moderno</p>
         <div class="hero__cta">
-          <a href="#projectos" class="btn btn--primary">Ver projectos</a>
-          <a href="#contacto" class="btn btn--ghost">Entrar em Contacto</a>
+          <a href="#projetos" class="btn btn--primary">Me Contrate!</a>
+          <a href="#contacto" class="btn btn--ghost">DOWNLOAD CV</a>
+        </div>
+
+        <!-- Links Sociais -->
+        <div class="social-icons">
+          <a href="https://github.com/felizardolmatola" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/felizardo_matola" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a> 
+          <a href="https://www.facebook.com/FelizardoMatola" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://mz.linkedin.com/in/felizardolazaro-matola-b1097340a" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a> 
         </div>
       </div>
+
       <div class="hero__portrait">
         <div class="hero__frame">
           <img src="./IMG_3844.png" alt="Retrato de Felizardo Lázaro Matola" />
+        </div>
+
+        <!-- Métricas e status -->
+        <div class="container-estatisticas">
+          <div class="badge-online">
+            <span class="ponto-verde"></span>
+            Disponível para novos projetos
+          </div>
+
+          <div class="metricas">
+            <div class="item-metrica">
+              <div class="icone-circulo"><i class="fa-solid fa-diagram-project"></i></div>
+              <span class="numero">1+</span>
+              <span class="legenda">Projetos</span>
+            </div>
+            <div class="item-metrica">
+              <div class="icone-circulo"><i class="fa-solid fa-clock"></i></div>
+              <span class="numero">1 anos</span>
+              <span class="legenda">Experiência</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <div class="skyline" aria-hidden="true"></div>
 
-    <!-- SOBRE -->
-    <section class="section section--dark" id="sobre">
-      <div class="section__head">
-        <p class="eyebrow eyebrow--light">Sobre</p>
-        <h2>Quem sou eu</h2>
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="secao-preta">
+      <div class="conteudo-secao sobre-mim-container">
+        <div class="foto-container">
+          <!-- Círculo de letras animado -->
+          <div class="spinning-badge">
+            <svg viewBox="0 0 100 100" width="150" height="150">
+              <defs>
+                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+              </defs>
+              <text>
+                <textPath href="#circlePath">
+                  * FULLSTACK * DEVELOPER
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          <div class="sobre-mim-imagem img">
+            <img src="./IMG_4248.JPG" alt="Felizardo Lázaro Matola" class="sua-classe-da-foto" />
+          </div>
+        </div>
+
+        <!-- Coluna da Direita: Textos -->
+        <div class="sobre-mim-texto">
+          <h2>Um pouco sobre mim e minha trajetória na programação</h2>
+
+          <p>
+            Sou Felizardo Lázaro Matola, um apaixonado por programação e tecnologia! Aos 20 anos, já tive a incrível oportunidade de participar de projetos que marcaram minha trajetória, como o desenvolvimento de uma aplicação pela Rocketseat em 2025. Essas experiências me ensinaram a importância de inovar e me desafiar constantemente.
+          </p>
+          <p>
+            Desenvolvo projetos para web há cerca de 2 anos, quando comecei a programar em HTML, CSS e JavaScript focado no front-end. Atualmente sou um desenvolvedor fullstack com experiência na criação de aplicações completas, com backends seguros e escaláveis e interfaces modernas e intuitivas. Meu maior objetivo é criar projetos que impactem de forma positiva a vida das pessoas.
+          </p>
+
+          <a href="#projetos" class="botao-projetos">
+            Veja meus projetos <span>↘</span>
+          </a>
+        </div>
       </div>
-      <div class="about">
-        <p class="about__text">
-          Chamo-me Felizardo Lázaro Matola. Sou desenvolvedor Full stack e gosto de transformar ideias
-          em páginas que funcionam bem em qualquer ecrã — do telemóvel ao desktop. Trabalho a
-          base sólida da web: marcação semântica, estilo cuidado e comportamento,atualmente focado em tecnologias como
-          JavaScript, Python, Typerscript e ruby,
-          sempre com atenção ao detalhe e à experiência de quem usa o que construo.
-        </p>
-        <dl class="about__facts">
-          <div class="about__fact">
-            <dt>foco</dt>
-            <dd>HTML · CSS · JavaScript · Python · Ruby · Typerscript.</dd>
+    </section>
+    
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao-projetos">
+      <div class="conteudo-projetos">
+        <h2 class="titulo-projetos">Meus projetos</h2>
+
+        <div class="grid-projetos">
+          <!-- PROJETO 01 -->
+          <div class="card-projeto">
+            <span class="numero-projeto">01</span>
+            <div class="container-imagem">
+              <img src="./Captura de ecrã 2026-07-21 180054.png" alt="Interface da plataforma Nexuspay">
+            </div>
+            <h3>Nexuspay</h3>
+            <p>Projeto de um e-commerce criado com Next.js, focado em pagamentos. Conta com autenticação, carrinho, favoritos, rotas protegidas com middlewares e integração com gateway de pagamento.</p>
           </div>
-          <div class="about__fact">
-            <dt>abordagem</dt>
-            <dd>Mobile-first, código limpo</dd>
-          </div>
-          <div class="about__fact">
-            <dt>disponibilidade</dt>
-            <dd>Aberto a novos projectos</dd>
-          </div>
-        </dl>
+        </div>
       </div>
     </section>
 
-    <!-- COMPETÊNCIAS -->
-    <section class="section" id="competencias">
-      <div class="section__head">
-        <p class="eyebrow"> Competências</p>
-        <h2>Com que trabalho</h2>
-      </div>
-      <div class="skills">
-        <div class="skills__group">
-          <h3>Aplicações web</h3>
-          <ul class="tags">
-            <li>React</li>
-            <li> Node.js&amp; PostgreSQL</li>
-            <li>Acessibilidade</li>
-          </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="secao-skills">
+      <div class="conteudo-skills">
+        <!-- COLUNA HARD SKILLS -->
+        <div class="coluna-skills">
+          <h2>Hard Skills</h2>
+          <div class="card-skills">
+            <span class="tag-skill">Tailwind CSS</span>
+            <span class="tag-skill">JavaScript</span>
+            <span class="tag-skill">React</span>
+            <span class="tag-skill">Nest.js</span>
+            <span class="tag-skill">Prisma</span>
+            <span class="tag-skill">Git</span>
+            <span class="tag-skill">GitHub</span>
+          </div>
         </div>
-        <div class="skills__group">
-          <h3>APIs &amp; Backend</h3>
-          <ul class="tags">
-            <li>Python</li>
-            <li>node.js</li>
-            <li>Docker</li>
-          </ul>
+
+        <!-- COLUNA SOFT SKILLS -->
+        <div class="coluna-skills">
+          <h2>Soft Skills</h2>
+          <div class="card-skills">
+            <span class="tag-skill">Aprendizado contínuo</span>
+            <span class="tag-skill">Comunicação</span>
+            <span class="tag-skill">Proatividade</span>
+            <span class="tag-skill">Trabalho em equipe</span>
+            <span class="tag-skill">Organização</span>
+          </div>
         </div>
-        <div class="skills__group">
-          <h3>Sites &amp; Londing Pages </h3>
-          <ul class="tags">
-            <li>JavaScript</li>
-            <li>Ract</li>
-            <li>CSS Moderno</li>
-            <li>Git &amp; GitHub</li>
-          </ul>
-        </div>
-        <div class="skills__group">
-          <h3>Idiomas</h3>
-          <ul class="tags">
-            <li>Português (Nativo)</li>
-            <li>Inglês (Intermediário)</li>
-            <li>Espanhol (Básico)</li>
-          </ul>
       </div>
     </section>
 
-    <!-- PROJECTOS -->
-    <section class="section section--dark" id="projectos">
-      <div class="section__head">
-        <p class="eyebrow eyebrow--light">Projetos</p>
-        <h2>Trabalhos recentes</h2>
-        <p><br></p>
-      <div class="projects">
-        <article class="project">
-          <div class="project__top">
-            <span class="project__num">01</span>
-            <div class="project__links">
-              <a href="#" aria-label="Ver código">código</a>
-              <a href="#" aria-label="Ver demonstração">demo</a>
+    <!-- EXPERIÊNCIA -->
+    <section class="secao-experiencia">
+      <div class="conteudo-experiencia">
+        <h2 class="titulo-experiencia">Minha experiência</h2>
+
+        <div class="timeline">
+          <!-- Linha vertical centralizada -->
+          <div class="linha-vertical">
+            <div class="bolinha-scroll" id="bolinha"></div>
+          </div>
+
+          <!-- CARD EXPERIÊNCIA 1 -->
+          <div class="item-experiencia">
+            <div class="bloco-esquerdo">
+              <h3>Desenvolvedor Front End JR</h3>
+              <span class="empresa">Fluxo Digital</span>
+              <span class="data">Maio 2023 - ATUALMENTE</span>
+            </div>
+            <div class="bloco-centro"></div>
+            <div class="bloco-direito">
+              <p>Atuo na área de desenvolvimento front-end, focado na implementação e melhoria de interfaces e funcionalidades em projetos internos. Meu trabalho envolve colaboração com a equipe e integração com serviços internos da empresa.</p>
             </div>
           </div>
-          <h3>Progeto Pessoal - Meu portifolio</h3>
-          <p>Desenvolvimento deste portfolio pessoal utilizando CSS, HTML e JavaScript.</p>
-          <ul class="tags tags--sm">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </article>
-        <article class="project">
-          <div class="project__top">
-            <span class="project__num">02</span>
-            <div class="project__links">
-              <a href="#" aria-label="Ver código">código</a>
-              <a href="#" aria-label="Ver demonstração">demo</a>
-            </div>
-          </div>
-          <h3>Brevemente</h3>
-          <p></p>
-          <ul class="tags tags--sm">
-            <li>JavaScript</li>
-            <li>API</li>
-            <li>CSS Grid</li>
-          </ul>
-        </article>
-        <article class="project">
-          <div class="project__top">
-            <span class="project__num">03</span>
-            <div class="project__links">
-              <a href="#" aria-label="Ver código">código</a>
-              <a href="#" aria-label="Ver demonstração">demo</a>
-            </div>
-          </div>
-          <h3>Brevememnte</h3>
-          <p></p>
-          <ul class="tags tags--sm">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Responsivo</li>
-          </ul>
-        </article>
-      </div>
-    </section>
 
-    <!-- CONTACTO -->
-    <section class="section" id="contacto">
-      <div class="section__head">
-        <p class="eyebrow"> Contacto</p>
-        <h2>Vamos conversar</h2>
-      </div>
-      <div class="contact">
-        <div class="contact__info">
-          <p>Tem um projecto em mente ou quer apenas trocar ideias sobre desenvolvimento web? Escreva-me.</p>
-          <ul class="contact__list">
-            <li><span>Facebook</span><a href="https://www.facebook.com/share/1CvQJMAFyS/?mibextid=wwXIfr" target="_blank">facebook.com/FelizardoMatola</a></li>
-            <li><span>github</span><a href="https://github.com/felizardolmatola" target="_blank" rel="noopener">github.com/felizardolmatola</a></li>
-            <li><span>linkedin</span><a href="https://www.linkedin.com/mypreferences/m/?li_theme=light&trk=profile" target="_blank" rel="noopener">linkedin.com/felizardomatola</a></li>
-            <li><span>Instagram</span><a href="https://www.instagram.com/felizardo_matola?igsh=aWRsOGx1bjhuZ21k&utm_source=qr">instagram.com/felizardomatola</a></li>
-            <li><span>Email</span><a href="felizardolmatola@gmail.com">Email.com/felizardolmatola@gmail.com</a></li>
-          </ul>
+          <!-- CARD EXPERIÊNCIA 2 -->
+          <div class="item-experiencia">
+            <div class="bloco-esquerdo">
+              <h3>Em Breve</h3>
+              <span class="empresa">Processando</span>
+              <span class="data">Julho 2026</span>
+            </div>
+            <div class="bloco-centro"></div>
+            <div class="bloco-direito">
+              <p>Novos projetos e oportunidades em andamento.</p>
+            </div>
+          </div>
         </div>
-        <form class="contact__form" id="contactForm">
-          <label>
-            Nome
-            <input type="text" name="nome" required placeholder="O seu nome">
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required placeholder="voce@email.com">
-          </label>
-          <label>
-            Mensagem
-            <textarea name="mensagem" rows="4" required placeholder="Escreva a sua mensagem..."></textarea>
-          </label>
-          <button type="submit" class="btn btn--primary">Enviar mensagem</button>
-          <p class="contact__status" id="contactStatus" role="status"></p>
-        </form>
       </div>
     </section>
 
+    <!-- RODAPÉ / CONTACTO -->
+    <section id="contacto" class="rodape">
+      <!-- Nome gigante e desfocado ao fundo -->
+      <div class="nome-fundo">Felizardo Matola</div>
+
+      <div class="conteudo-rodape">
+        <!-- COLUNA 1: Contatos -->
+        <div class="coluna-rodape contato">
+          <div class="item-contato">
+            <i class="fa-solid fa-envelope icone-contato"></i>
+            <div class="texto-contato">
+              <span class="label">Email</span>
+              <a href="mailto:contato@felizardomatola27.com" class="valor">contato@felizardomatola27.com</a>
+            </div>
+          </div>
+
+          <div class="item-contato">
+            <i class="fa-solid fa-location-dot icone-contato"></i>
+            <div class="texto-contato">
+              <span class="label">Localização</span>
+              <span class="valor">Moçambique</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUNA 2: Redes Sociais -->
+        <div class="coluna-rodape redes">
+          <span class="label">Redes sociais</span>
+          <div class="links-redes">
+            <a href="https://github.com/felizardolmatola" target="_blank" class="link-social">
+              GITHUB <span class="seta">↗</span>
+            </a>
+            <a href="https://mz.linkedin.com/in/felizardolazaro-matola-b1097340a" target="_blank" class="link-social">
+              LINKEDIN <span class="seta">↗</span>
+            </a>
+            <a href="https://www.facebook.com/FelizardoMatola" target="_blank" class="link-social">
+              FACEBOOK <span class="seta">↗</span>
+            </a>
+            <a href="https://www.instagram.com/felizardo_matola" target="_blank" class="link-social">
+              INSTAGRAM <span class="seta">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUNA 3: Direitos Autorais -->
+        <div class="coluna-rodape direitos">
+          <p class="criador">Criado e desenvolvido por <br><strong>Felizardo Matola</strong></p>
+          <p class="ano">&copy; 2026</p>
+        </div>
+      </div>
+    </section>
   </main>
-
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> Felizardo Lázaro Matola.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
